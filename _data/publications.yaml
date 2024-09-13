@@ -1,0 +1,42 @@
+papers:
+
+  - title: "Towards Unified Alignment Between Agents, Humans, and Environment"
+    authors: "Zonghan Yang, An Liu, Zijun Liu, Kaiming Liu, Fangzhou Xiong, Yile Wang, <b>Zeyuan Yang</b>, Qingyuan Hu, Xinrui Chen, Zhenhe Zhang, Fuwen Luo, Zhicheng Guo, Peng Li, Yang Liu"
+    venue: "ICML 2024"
+    paper_pdf: "https://arxiv.org/abs/2402.07744"
+    code: "https://agent-force.github.io/unified-alignment-for-agents.html"
+    selected: y
+
+  - title: "RILA: Reflective and Imaginative Language Agent for Zero-Shot Semantic Audio-Visual Navigation"
+    authors: "<b>Zeyuan Yang</b><sup>‡</sup>, Jiageng Liu<sup>‡</sup>, Peihao Chen, Anoop Cherian, Tim K Marks, Jonathan Le Roux, Chuang Gan"
+    venue: "CVPR 2024"
+    paper_pdf: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_RILA_Reflective_and_Imaginative_Language_Agent_for_Zero-Shot_Semantic_Audio-Visual_CVPR_2024_paper.html"
+    selected: y
+
+  - title: "Failures Pave the Way: Enhancing Large Language Models through Tuning-free Rule Accumulation"
+    authors: "<b>Zeyuan Yang</b>, Peng Li, Yang Liu"
+    venue: "EMNLP 2023"
+    paper_pdf: "https://arxiv.org/abs/2310.15746"
+    code: "https://github.com/THUNLP-MT/TRAN"
+    selected: y
+
+  - title: "Restricted orthogonal gradient projection for continual learning"
+    authors: "<b>Zeyuan Yang</b>, Zonghan Yang, Yichen Liu, Peng Li, Yang Liu"
+    venue: "AI Open"
+    paper_pdf: "https://www.sciencedirect.com/science/article/pii/S2666651023000128"
+    code: "https://github.com/THUNLP-MT/ROGO"
+    selected: y
+
+  - title: "Dynamic Multi-branch Layers for On-device Neural Machine Translation"
+    authors: "Zhixing Tan, <b>Zeyuan Yang</b>, Meng Zhang, Qun Liu, Maosong Sun, Yang Liu"
+    venue: "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+    paper_pdf: "https://ieeexplore.ieee.org/document/9729651"
+    code: "https://github.com/THUNLP-MT/Transformer-DMB"
+    selected: y
+
+  - title: "Exploring Deep Learning for Air Pollutant Emission Estimation"
+    authors: "Lin Huang<sup>‡</sup>, Song Liu<sup>‡</sup>, <b>Zeyuan Yang</b>, Jia Xing, Jia Zhang, Jiang Bian, Siwei Li, Shovan Kumar Sahu, Shuxiao Wang, Tie-Yan Liu"
+    venue: "Geoscientific Model Development"
+    paper_pdf: "https://gmd.copernicus.org/articles/14/4641/2021/"
+    selected: y
+

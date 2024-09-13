@@ -1,0 +1,36 @@
+experiences:
+- place: "University of Massachusetts Amherst"
+  time: "2024 - now"
+  title: "PhD Student"
+  subtitle: "Department of Computer Science and Technology"
+  category: "school"
+
+- place: "Zhiyuan Innovation Technology Co., Ltd. "
+  time: "02/2024 - 08/2024"
+  title: "Research Intern"
+  subtitle: "Beijing, China"
+  category: "work"
+
+- place: "Tsinghua Univerity"
+  time: "2021 - 2024"
+  title: "Master Student"
+  subtitle: "Department of Computer Science and Technology"
+  category: "school"
+
+- place: "Ruilai Wisdom Technology Co., Ltd. "
+  time: "01/2021 - 06/2021"
+  title: "Research Intern"
+  subtitle: "Beijing, China"
+  category: "work"
+
+- place: "Microsoft Research Asia (MSRA)"
+  time: "06/2020 - 12/2020"
+  title: "Research Intern"
+  subtitle: "Beijing, China"
+  category: "work"
+
+- place: "Tsinghua University"
+  time: "2017 - 2021"
+  title: "B.S. Student"
+  subtitle: "School of Economics and Management"
+  category: "school"
