@@ -1,4 +1,17 @@
 papers:
+  - title: "UBSoft: A Simulation Platform for Robotic Skill Learning in Unbounded Soft Environments"
+    authors: "Chunru Lin, Jugang Fan, Yian Wang, <b>Zeyuan Yang</b>, Zhehuan Chen, Lixing Fang, Tsun-Hsuan Wang, Zhou Xian, Chuang Gan"
+    venue: "CoRL 2024"
+    paper_pdf: "https://arxiv.org/abs/2411.12711"
+    code: "https://ubsoft24.github.io/"
+    selected: y
+
+  - title: "Rethinking Long Context Generation from the Continual Learning Perspective"
+    authors: "<b>Zeyuan Yang</b>, Fangzhou Xiong, Peng Li, Yang Liu"
+    venue: "COLING 2025"
+    # paper_pdf: "https://arxiv.org/abs/2402.07744"
+    # code: "https://agent-force.github.io/unified-alignment-for-agents.html"
+    selected: y
 
   - title: "Towards Unified Alignment Between Agents, Humans, and Environment"
     authors: "Zonghan Yang, An Liu, Zijun Liu, Kaiming Liu, Fangzhou Xiong, Yile Wang, <b>Zeyuan Yang</b>, Qingyuan Hu, Xinrui Chen, Zhenhe Zhang, Fuwen Luo, Zhicheng Guo, Peng Li, Yang Liu"
