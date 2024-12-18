@@ -1,4 +1,10 @@
 papers:
+  - title: "VCA: Video Curious Agent for Long Video Understanding"
+    authors: "<b>Zeyuan Yang<\b><sup>‡</sup>, Delin Chen<sup>‡</sup>, Xueyang Yu, Maohao Shen, Chuang Gan"
+    venue: "Under Review"
+    paper_pdf: "https://www.arxiv.org/abs/2412.10471"
+    code: "https://vis-www.cs.umass.edu/vca-website/"
+
   - title: "UBSoft: A Simulation Platform for Robotic Skill Learning in Unbounded Soft Environments"
     authors: "Chunru Lin<sup>‡</sup>, Jugang Fan<sup>‡</sup>, Yian Wang, <b>Zeyuan Yang</b>, Zhehuan Chen, Lixing Fang, Tsun-Hsuan Wang, Zhou Xian, Chuang Gan"
     venue: "CoRL 2024"
