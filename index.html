@@ -56,7 +56,7 @@
 
       <tr>
         <td style="padding:16px;width:20%;vertical-align:middle">
-          <img src="images/LCCL.jpg" alt="clean-usnob" width="160" height="160">
+          <img src="images/LCCL.jpg" alt="clean-usnob" width="160" height="80">
         </td>
         <td style="padding:8px;width:80%;vertical-align:middle">
           <a href="https://coling2025.org/program/main_conference_papers/">
@@ -74,47 +74,45 @@
       </tr>
 
 
-      <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+      <tr onmouseout="vca_stop()" onmouseover="vca_start()">
         <td style="padding:16px;width:20%;vertical-align:middle">
           <div class="one">
             <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/cat4d.mp4" type="video/mp4">
+            <source src="images/vca.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/cat4d.jpg' width="160">
+            <!-- <img src='images/cat4d.jpg' width="160"> -->
           </div>
           <script type="text/javascript">
-            function cat4d_start() {
+            function vca_start() {
               document.getElementById('cat4d_image').style.opacity = "1";
             }
 
-            function cat4d_stop() {
+            function vca_stop() {
               document.getElementById('cat4d_image').style.opacity = "0";
             }
             cat4d_stop()
           </script>
         </td>
         <td style="padding:8px;width:80%;vertical-align:middle">
-          <a href="https://cat-4d.github.io/">
-        <span class="papertitle">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models</span>
+          <a href="https://vis-www.cs.umass.edu/vca-website/">
+        <span class="papertitle">VCA: Video Curious Agent for Long Video Understanding</span>
           </a>
           <br>
-            <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-            <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-            <a href="https://poolio.github.io/">Ben Poole</a>,
-            <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-            <a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
-            <strong>Jonathan T. Barron</strong>,
-            <a href="https://holynski.org/">Aleksander Holynski</a>
+            <strong>Zeyuan Yang</strong><sup>‡</sup>,
+            <a href="https://chendl02.github.io/">Delin Chen<sup>‡</sup></a>,
+            <a href="https://openreview.net/profile?id=~Xueyang_Yu1">Xueyang Yu</a>,
+            <a href="https://maohaos2.github.io/Maohao/">Maohao Shen</a>,
+            <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>
           <br>
           <em>arXiv</em>, 2024
           <br>
-          <a href="https://cat-4d.github.io/">project page</a>
+          <a href="https://vis-www.cs.umass.edu/vca-website/">project page</a>
           /
-          <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+          <a href="https://www.arxiv.org/abs/2412.10471">arXiv</a>
           <p></p>
           <p>
-          An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
+            In this work, we introduce VCA, a curiosity-driven video agent with self-exploration capability, which autonomously navigates video segments and efficiently builds a comprehensive understanding of complex video sequences.
           </p>
         </td>
       </tr>

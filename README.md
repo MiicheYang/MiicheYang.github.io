@@ -1,1 +1,1 @@
-# zeyuanyang.github.io
+This is the source code to Zeyuan Yang's public academic website: https://miicheyang.github.io/, which is built on https://jonbarron.info/.
