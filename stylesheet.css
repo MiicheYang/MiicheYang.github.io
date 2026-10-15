@@ -96,6 +96,36 @@ h2 {
   font-size: 22px;
 }
 
+.publication-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publication-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.publication-tab {
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #1772d0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.publication-tab.active {
+  background: #1772d0;
+  color: white;
+}
+
+details summary {
+  cursor: pointer;
+}
+
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;

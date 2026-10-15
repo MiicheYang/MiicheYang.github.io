@@ -49,8 +49,13 @@
                   <li>2025.06: One paper <a href="https://www.arxiv.org/abs/2412.10471">VCA</a> is accepted by <a href="https://iccv.thecvf.com/Conferences/2025">ICCV 2025</a>.</li>
                   <li>2025.06: Introduce <a href="https://vlm-mirage.github.io/">Mirage</a>.</li>
                   <li>2025.05: Internship at <a href="https://sra.samsung.com/">Samsung</a> this summer, at Mountain View, California.</li>
-                  <li>2024.09: Starting my PhD Journey at UMass Amherst.</li>
                 </ul>
+                <details>
+                  <summary>Older news</summary>
+                  <ul>
+                  <li>2024.09: Starting my PhD Journey at UMass Amherst.</li>
+                  </ul>
+                </details>
               </td>
             </tr>
           </tbody></table>
@@ -67,6 +72,18 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       <tr>
+        <td colspan="2" style="padding:16px 16px 8px;">
+          <div class="publication-heading">
+            <h2>Papers</h2>
+            <div class="publication-tabs" role="tablist" aria-label="Filter papers">
+              <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-paper-filter="selected">Selected</button>
+              <button class="publication-tab" type="button" role="tab" aria-selected="false" data-paper-filter="full">Full</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <a href="images/UniCanvas.pdf"><img src="images/UniCanvas.jpg" alt="UniCanvas paper teaser" width="160" height="127"></a>
         </td>
@@ -93,7 +110,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <video width="160" height="90" autoplay loop muted playsinline>
             <source src="images/mirage.mp4" type="video/mp4">
@@ -127,7 +144,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/VCA.jpg" alt="clean-usnob" width="160" height="160">
         </td>
@@ -154,7 +171,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/LCCL.jpg" alt="clean-usnob" width="160" height="80">
         </td>
@@ -173,7 +190,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <a href="https://vis-www.cs.umass.edu/ubsoft/">
             <video playsinline autoplay loop muted src="images/ubsoft1.mp4" alt="sym" width="70" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video></a>
@@ -213,7 +230,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/UA2.jpg" alt="clean-usnob" width="160" height="100">
         </td>
@@ -249,7 +266,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/RILA.jpg" alt="clean-usnob" width="160" height="100">
         </td>
@@ -274,7 +291,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/TRAN.jpg" alt="clean-usnob" width="160" height="120">
         </td>
@@ -297,7 +314,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/ROGO.jpg" alt="clean-usnob" width="160" height="100">
         </td>
@@ -322,7 +339,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/DMB.png" alt="clean-usnob" width="160" height="160">
         </td>
@@ -348,7 +365,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="publication-row">
         <td style="padding:16px;width:25%;vertical-align:middle">
           <img src="images/GMD.png" alt="clean-usnob" width="160" height="80">
         </td>
@@ -531,5 +548,23 @@
         </td>
       </tr>
     </table>
+    <script>
+      const paperRows = document.querySelectorAll(".publication-row");
+      const paperTabs = document.querySelectorAll("[data-paper-filter]");
+
+      paperTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          const selectedOnly = tab.dataset.paperFilter === "selected";
+          paperRows.forEach(row => {
+            row.hidden = selectedOnly && !row.classList.contains("selected-paper");
+          });
+          paperTabs.forEach(item => {
+            const active = item === tab;
+            item.classList.toggle("active", active);
+            item.setAttribute("aria-selected", active);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
