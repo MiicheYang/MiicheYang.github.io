@@ -45,15 +45,15 @@
             <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>News</h2>
-                <ul>
+                <ul class="news-list">
                   <li>2025.06: One paper <a href="https://www.arxiv.org/abs/2412.10471">VCA</a> is accepted by <a href="https://iccv.thecvf.com/Conferences/2025">ICCV 2025</a>.</li>
                   <li>2025.06: Introduce <a href="https://vlm-mirage.github.io/">Mirage</a>.</li>
                   <li>2025.05: Internship at <a href="https://sra.samsung.com/">Samsung</a> this summer, at Mountain View, California.</li>
                 </ul>
-                <details>
+                <details class="older-news">
                   <summary>Older news</summary>
-                  <ul>
-                  <li>2024.09: Starting my PhD Journey at UMass Amherst.</li>
+                  <ul class="news-list">
+                    <li>2024.09: Starting my PhD Journey at UMass Amherst.</li>
                   </ul>
                 </details>
               </td>
@@ -62,26 +62,20 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <div class="research-header">
+                  <h2>Research</h2>
+                  <div class="publication-filter" role="group" aria-label="Choose which publications to show">
+                    <button class="publication-filter-button is-active" type="button" data-publication-filter="selected" aria-pressed="true" aria-controls="publication-list">Selected</button>
+                    <button class="publication-filter-button" type="button" data-publication-filter="full" aria-pressed="false" aria-controls="publication-list">Full</button>
+                  </div>
+                </div>
                 <p>
                   I am broadly interested in <b>embodied intelligence</b> and <b>multi-modal foundation models</b>. Currently, I focus on <b>building lifelong embodied agents executable in real-world environments</b>. I welcome collaboration opportunities and encourages interested individuals to reach out.
                 </p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-      <tr>
-        <td colspan="2" style="padding:16px 16px 8px;">
-          <div class="publication-heading">
-            <h2>Papers</h2>
-            <div class="publication-tabs" role="tablist" aria-label="Filter papers">
-              <button class="publication-tab active" type="button" role="tab" aria-selected="true" data-paper-filter="selected">Selected</button>
-              <button class="publication-tab" type="button" role="tab" aria-selected="false" data-paper-filter="full">Full</button>
-            </div>
-          </div>
-        </td>
-      </tr>
+          <table id="publication-list" class="publications" data-view="selected" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
       <tr class="publication-row selected-paper">
         <td style="padding:16px;width:25%;vertical-align:middle">
@@ -549,19 +543,16 @@
       </tr>
     </table>
     <script>
-      const paperRows = document.querySelectorAll(".publication-row");
-      const paperTabs = document.querySelectorAll("[data-paper-filter]");
+      const publicationList = document.getElementById("publication-list");
+      const publicationFilterButtons = document.querySelectorAll("[data-publication-filter]");
 
-      paperTabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-          const selectedOnly = tab.dataset.paperFilter === "selected";
-          paperRows.forEach(row => {
-            row.hidden = selectedOnly && !row.classList.contains("selected-paper");
-          });
-          paperTabs.forEach(item => {
-            const active = item === tab;
-            item.classList.toggle("active", active);
-            item.setAttribute("aria-selected", active);
+      publicationFilterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          publicationList.dataset.view = button.dataset.publicationFilter;
+          publicationFilterButtons.forEach(filterButton => {
+            const active = filterButton === button;
+            filterButton.classList.toggle("is-active", active);
+            filterButton.setAttribute("aria-pressed", String(active));
           });
         });
       });
